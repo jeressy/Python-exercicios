@@ -1,0 +1,26 @@
+print(f'Bem-vindo(a)!\n Níveis de assinatura:')
+
+rank = int(input('1- Basic \n2- Silver \n3- Gold \n4- Platinum \nInforme o nível do cliente (digite APENAS o número): '))
+if rank == 1:
+    a = int(input(f'Clientes "Basic" pagam 30% do bônus.\nPor favor, insira o rendimento anual do cliente: '))
+    a = a / 100
+    print(f'O cliente vai pagar R${a * 30}')
+
+elif rank == 2:
+    b = int(input(f'Clientes "Silver" pagam 20% do bônus.\nPor favor, insira o rendimento anual do cliente: '))
+    b = b / 100
+    print(f'O cliente vai pagar R${b * 20}')
+
+elif rank == 3:
+    c = int(input(f'Clientes "Gold" pagam 10% do bônus.\nPor favor, insira o rendimento anual do cliente: '))
+    c = c / 100
+    print(f'O cliente pagará R${c * 10}')
+
+elif rank == 4:
+    d = int(input(f'Clientes "Platinum" pagam 5% do bônus.\nPor favor, insira o rendimento anual do cliente: '))
+    d = d / 100
+    print(f'O cliente pagará R${d * 5}')
+
+else:
+    print('Digite um número válido.')
+
